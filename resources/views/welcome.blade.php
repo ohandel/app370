@@ -7,7 +7,7 @@
                 <div class="panel panel-success">
 
                     @if(Auth::guest())
-                            <div class="panel-heading">Welcome to ManageIT! 🏡🏡🏡</div>
+                            <div class="panel-heading">Welcome to {{ config('app.name', 'Laravel') }}! 🏡🏡🏡</div>
                     @endif
                     @if(Auth::check())
                             <div class="panel-heading">Welcome, {{Auth::user()->name}}!</div>
@@ -23,6 +23,7 @@
                 <a href= "{{ url('about') }}" class="btn btn-info"> Learn more about us! 📖 >></a>
                 </div>
 
+                <br>
                 <img src = {{asset('img/old-house-hotel-exterior.jpg')}} width="100%" >
             </div>
         </div>
