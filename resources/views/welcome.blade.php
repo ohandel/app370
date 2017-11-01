@@ -12,6 +12,7 @@
                     @if(Auth::check())
                             <div class="panel-heading">Welcome, {{Auth::user()->name}}!</div>
                     @endif
+
                 </div>
                 <div>
                 @if(Auth::guest())
