@@ -79,3 +79,6 @@ server.php
 webpack.mix.js
 yarn.lock
 
+/composer.phar
+/.phpstorm.meta.php
+/_ide_helper.php
